@@ -9,6 +9,8 @@ import SurveyList from '@/components/surveys/surveyList'
 import SampleSurvey from '@/components/surveys/survey'
 import PremiumCatalogue from '@/components/catalogue/premium'
 import CatalogueList from '@/components/catalogue/catalogueList'
+import RecommendedProducts from '@/components/recommended/products'
+
 // import VUEX store
 import store from '@/store'
 // import helpers
@@ -85,6 +87,12 @@ export const router = new Router({
       path: '/catalogue/list',
       name: 'catList',
       component: CatalogueList
+    },
+    {
+      path: '/recommended',
+      name: 'recommended',
+      component: RecommendedProducts,
+      props: true
     }
   ]
 })

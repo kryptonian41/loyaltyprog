@@ -77,6 +77,7 @@
               close()
               step = 1
               successCb()
+              this.$router.push({name: 'recommended', params: {title: product.name}})
             }">Close</v-btn>
         </v-card-actions>
       </v-card>

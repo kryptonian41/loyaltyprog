@@ -3,6 +3,9 @@ const router = express.Router()
 const productController = require('../controllers/productController')
 const spawn = require('child_process').spawn
 const path = require('path')
+const firebaseAdmin = require('firebase-admin')
+const db = firebaseAdmin.firestore()
+
 router.get('/all', (req, res) => {
   productController.getAllProducts().then(products => res.json(products))
 })
@@ -19,18 +22,33 @@ router.get('/recommend/:name', (req, res) => {
   var process = spawn('python', [
     path.resolve(__dirname, '../', 'recommendation', 'main.py'),
     'apoorv',
-    name
+    name.toLowerCase()
   ])
 
   // Takes stdout data from script which executed
   // with arguments and send this data to res object
-  process.stdout.on('data', function(data) {
+  process.stdout.on('data', async function(data) {
     const parsedData = JSON.parse(data.toString('utf8')).product
     const productNames = []
     for (var key in parsedData) {
       productNames.push(parsedData[key])
     }
-    res.send(productNames)
+    const products = []
+    for (let i = 0; i < 5; i++) {
+      const name = productNames[i]
+      await db
+        .collection('products')
+        .where('name', '==', name)
+        .get()
+        .then(snap => {
+          snap.docs.forEach(doc => {
+            if (doc.data()) {
+              products.push(doc.data())
+            }
+          })
+        })
+    }
+    res.send(products)
   })
 })
 

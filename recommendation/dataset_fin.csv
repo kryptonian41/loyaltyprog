@@ -1,103 +1,103 @@
 user_id,prod_id,prod_name,prod_count
-mulsz,27339,hp mouse,20
-mulsz,89512,logitech mouse,23
-mulsz,80111,hp monitor,17
-mulsz,61582,dell mouse,13
-mulsz,90783,dell laptop,16
-mulsz,67105,alienware laptop,10
-mulsz,26167,hp laptop,11
-mulsz,93934,hp desktop,19
-mulsz,21794,wd harddisk,20
-mulsz,38287,laptop skin,14
-mulsz,20904,hp mouse,16
-mulsz,99666,msi laptop,14
-mulsz,57774,acer laptop,22
-mulsz,94533,usb led light,25
-mulsz,92486,mousepad,17
+mulsz,27339,Dell Inspirion Laptop,20
+mulsz,89512,Apple MacBook,23
+mulsz,80111,Alienware Laptop,17
+mulsz,61582,MSI Laptop,13
+mulsz,90783,Microsoft Laptop,16
+mulsz,67105,HP Spectre x360 Laptop,10
+mulsz,26167,HP Laptop,11
+mulsz,93934,Keyboard,19
+mulsz,21794,Mouse,20
+mulsz,38287,printer,14
+mulsz,20904,Dell Inspirion Laptop,16
+mulsz,99666,Apple MacBook,14
+mulsz,57774,Alienware Laptop,22
+mulsz,94533,MSI Laptop,25
+mulsz,92486,Microsoft Laptop,17
 mulsz,47730,keyboard skin,19
-mulsz,29619,seagate harddisk,21
-mulsz,31776,toshiba harddisk,20
-mulsz,84639,hp laptop,17
-mulsz,74590,dell laptop,17
-mulsz,3633,alienware laptop,21
-mulsz,95055,hp laptop,23
-mulsz,88800,hp mouse,20
-mulsz,13295,desktop webcam,18
-mulsz,43677,alienware laptop,20
-mulsz,30948,msi laptop,23
-mulsz,65163,sony pendrive,18
-mulsz,24681,audio adapter for pc,10
-mulsz,91574,msi laptop,13
-mulsz,30398,marshmello laptop skin,10
-mulsz,47127,dell laptop,24
-mulsz,54522,toshiba pendrive,18
-mulsz,62043,hp mouse,25
-mulsz,61504,dell mouse,20
-mulsz,76256,hp mouse,22
-mulsz,33737,seagate harddisk,25
-mulsz,96519,sandisk pendrive,19
-mulsz,8921,msi laptop,23
-mulsz,97517,sony pendrive,15
-mulsz,80253,msi laptop,22
-mulsz,91052,kingston pendrive,10
-mulsz,77354,wd harddisk,12
-mulsz,72580,sony pendrive,11
-mulsz,61287,hp keyboard,14
-mulsz,91717,msi laptop,25
-mulsz,90687,hp pendrive,14
-mulsz,99408,sandisk pendrive,23
-mulsz,43710,acer keyboard,22
-mulsz,46870,kingston pendrive,24
-imygo,43469,samsung mobile,21
-imygo,80534,oneplus mobile,23
-imygo,39451,samsung mobile,17
-imygo,87742,oneplus mobile,14
-imygo,15604,asus mobile,13
-imygo,4566,vivo mobile,13
-imygo,65802,vivo mobile,15
-imygo,71925,oppo mobile,16
-imygo,72249,lenovo mobile,11
-imygo,38497,nokia mobile,19
-imygo,10164,redmi mobile,11
-imygo,76761,realme mobile ,22
-imygo,20385,realme mobile ,25
-imygo,38455,honor mobile,24
-imygo,24204,asus mobile,16
-imygo,76745,blackberry mobile,15
-imygo,91482,blackberry mobile,17
-imygo,47829,samsung mobile,22
-imygo,70585,oneplus mobile,13
-imygo,35537,asus mobile,16
-imygo,89517,mobile hholder,20
-imygo,88903,mobile stand,18
-imygo,12990,mobile popholder,11
-imygo,5694,mobile charger,12
-imygo,9971,oneplus case,13
-imygo,85043,samsung case,12
-imygo,16002,vivo case,21
-imygo,72819,oppo case,19
-imygo,89815,oneplus case,23
-imygo,34217,lenovo case,16
-imygo,62220,nokia case,10
-imygo,27168,oneplus dashcharger,18
-imygo,40617,oneplus dashcharger,21
-imygo,72805,mobile popholder,11
-imygo,17318,mobile guard,15
-imygo,39081,mobile tempered,14
-imygo,78893,asus mobile,16
-imygo,53408,blackberry mobile,12
-imygo,88315,oneplus dashcharger,13
-imygo,4276,usb cable 12,17
-imygo,82813,usb cable 12,20
-imygo,62927,oneplus dashcharger,14
-imygo,29839,oneplus mobile,18
-imygo,67313,samsung mobile,11
-imygo,44007,oneplus mobile,11
-imygo,73527,samsung mobile,14
-imygo,78612,oneplus mobile,23
-imygo,99833,oneplus dashcharger,12
-imygo,79553,oneplus case,18
-imygo,80469,oneplus case,25
+mulsz,29619,HP Spectre x360 Laptop,21
+mulsz,31776,HP Laptop,20
+mulsz,84639,Keyboard,17
+mulsz,74590,Mouse,17
+mulsz,3633,printer,21
+mulsz,95055,Dell Inspirion Laptop,23
+mulsz,88800,Apple MacBook,20
+mulsz,13295,Alienware Laptop,18
+mulsz,43677,MSI Laptop,20
+mulsz,30948,Microsoft Laptop,23
+mulsz,65163,keyboard,18
+mulsz,24681,HP Spectre x360 Laptop,10
+mulsz,91574,HP Laptop,13
+mulsz,30398,Keyboard,10
+mulsz,47127,Mouse,24
+mulsz,54522,printer,18
+mulsz,62043,Dell Inspirion Laptop,25
+mulsz,61504,Apple MacBook,20
+mulsz,76256,Alienware Laptop,22
+mulsz,33737,MSI Laptop,25
+mulsz,96519,Microsoft Laptop,19
+mulsz,8921,keyboard,23
+mulsz,97517,HP Spectre x360 Laptop,15
+mulsz,80253,HP Laptop,22
+mulsz,91052,Keyboard,10
+mulsz,77354,Mouse,12
+mulsz,72580,printer,11
+mulsz,61287,Dell Inspirion Laptop,14
+mulsz,91717,Apple MacBook,25
+mulsz,90687,Alienware Laptop,14
+mulsz,99408,MSI Laptop,23
+mulsz,43710,Microsoft Laptop,22
+mulsz,46870,keyboard,24
+imygo,43469,Onplus 5t,21
+imygo,80534,Redmi note5,23
+imygo,39451,Oneplus 6,17
+imygo,87742,Oneplus 6t,14
+imygo,15604,Iphone XS,13
+imygo,4566,Iphone 7 Plus,13
+imygo,65802,Pocophone F1,15
+imygo,71925,Oneplus 3,16
+imygo,72249,Samsung Galaxy A8,11
+imygo,38497,Oneplus 6,19
+imygo,10164,Iphone XS,11
+imygo,76761,Iphone 7 Plus,22
+imygo,20385,Samsung Galaxy A8,25
+imygo,38455,Oneplus 3,24
+imygo,24204,Onplus 5t,16
+imygo,76745,Onplus 5t,15
+imygo,91482,Iphone XS,17
+imygo,47829,Pocophone F1,22
+imygo,70585,Samsung Galaxy A8,13
+imygo,35537,Pocophone F1,16
+imygo,89517,Onplus 5t,20
+imygo,88903,Oneplus 6,18
+imygo,12990,Onplus 5t,11
+imygo,5694,Samsung Galaxy A8,12
+imygo,9971,Pocophone F1,13
+imygo,85043,Iphone XS,12
+imygo,16002,Iphone 7 Plus,21
+imygo,72819,Onplus 5t,19
+imygo,89815,Pocophone F1,23
+imygo,34217,Samsung Galaxy A8,16
+imygo,62220,Oneplus 6,10
+imygo,27168,Onplus 5t,18
+imygo,40617,Samsung Galaxy A8,21
+imygo,72805,Onplus 5t,11
+imygo,17318,Oneplus 6t,15
+imygo,39081,Samsung Galaxy A8,14
+imygo,78893,Iphone XS,16
+imygo,53408,Iphone 7 Plus,12
+imygo,88315,Pocophone F1,13
+imygo,4276,Samsung Galaxy A8,17
+imygo,82813,Pocophone F1,20
+imygo,62927,Pocophone F1,14
+imygo,29839,Onplus 5t,18
+imygo,67313,Oneplus 6,11
+imygo,44007,Iphone XS,11
+imygo,73527,Iphone 7 Plus,14
+imygo,78612,Oneplus 6,23
+imygo,99833,Onplus 5t,12
+imygo,79553,Pocophone F1,18
+imygo,80469,Iphone XS,25
 wagtq,88691,mixer ,10
 wagtq,48295,juicer,14
 wagtq,92549,sandwich maker,24

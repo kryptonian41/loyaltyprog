@@ -11,7 +11,6 @@ router.post('/place', async (req, res) => {
   const {
     body: { product, userid, amount }
   } = req
-  console.log(product, userid, amount)
   try {
     const userData = await db
       .collection('users')
