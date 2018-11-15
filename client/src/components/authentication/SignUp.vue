@@ -24,12 +24,14 @@
                 v-model="pass"
                 :rules="passRules"
                 label="Password"
+                type="password"
                 required
               ></v-text-field>
               <v-text-field
                 v-model="cpass"
                 :rules="cpassRules"
                 label="Confirm Password"
+                type="password"
                 required
               ></v-text-field>
             </v-form>
@@ -93,10 +95,8 @@ export default {
         // sign up process
         const db = firebase.firestore()
         const auth = firebase.auth()
-        const user = await auth.createUserWithEmailAndPassword(
-          this.email,
-          this.pass
-        )
+        await auth.createUserWithEmailAndPassword(this.email, this.pass)
+        const user = auth.currentUser
         await user.updateProfile({
           displayName: self.name
         })
