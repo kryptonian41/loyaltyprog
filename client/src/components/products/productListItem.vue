@@ -7,7 +7,8 @@
        <v-img
           :src="product.photo_url"
           aspect-ratio="1"
-          class="grey lighten-2"
+          class="white lighten-2"
+          contain
         >
           <v-layout
             slot="placeholder"

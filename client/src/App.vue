@@ -62,6 +62,8 @@
       <v-slide-y-reverse-transition mode="out-in">
         <router-view/>
       </v-slide-y-reverse-transition>
+      <level-prompt></level-prompt>
+      <level-prompt></level-prompt>
     </v-content>
     <v-footer fixed app color="blue darken-4" dark class="pa-2">
       <span>&copy; 2017</span>
@@ -73,6 +75,8 @@
 import { fbConfig } from '@/config/dev.js'
 import firebase from 'firebase'
 import { mapState, mapMutations, mapActions } from 'vuex'
+import LoyaltyPrompt from '@/components/loyalty/prompt'
+import LevelPrompt from '@/components/loyalty/levelUp'
 
 export default {
   name: 'App',
@@ -81,6 +85,10 @@ export default {
       drawer: false,
       title: 'Dellcommerce'
     }
+  },
+  components: {
+    LoyaltyPrompt,
+    LevelPrompt
   },
   computed: {
     ...mapState(['user'])

@@ -29,9 +29,9 @@
           <v-window-item :value="2">
             <v-card-text>
               <p class="title">Which services do you like the most?</p>
-              <v-checkbox v-model="selected" label="Free POD" value="1"></v-checkbox>
-              <v-checkbox v-model="selected" label="Exclusive Access to product launch" value="2"></v-checkbox>
-              <v-checkbox v-model="selected" label="Premium Customer Support" value="3"></v-checkbox>
+              <v-checkbox v-model="services" label="Free POD" value="1"></v-checkbox>
+              <v-checkbox v-model="services" label="Exclusive Access to product launch" value="2"></v-checkbox>
+              <v-checkbox v-model="services" label="Premium Customer Support" value="3"></v-checkbox>
             </v-card-text>
           </v-window-item>
 

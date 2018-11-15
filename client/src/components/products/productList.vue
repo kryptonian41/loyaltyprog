@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-lg v-if="productsAvailable">
     <v-layout row wrap>
-      <v-flex xs6 md6 lg3 xl3 v-for="(product, index) in visibleProducts" :key="index">
+      <v-flex xs6 md4 lg3 xl3 v-for="(product, index) in visibleProducts" :key="index">
         <product-list-item :product="product" :buy="() => buyNow(product)"></product-list-item>
       </v-flex>
     </v-layout>
@@ -69,21 +69,16 @@ export default {
     setVisbileProducts() {
       const m = []
       if (this.productsAvailable) {
-        console.log(this.currentPage)
-        console.log(this.itemsPerPage)
         const lowerLimit = (this.currentPage - 1) * this.itemsPerPage
-        console.log('​setVisbileProducts -> lowerLimit', lowerLimit)
         const upperLimit =
           this.currentPage === this.paginationLength
             ? this.products.length
             : this.currentPage * this.itemsPerPage
-        console.log(upperLimit)
         // Selecting a range of products for pagination
         for (let i = lowerLimit; i < upperLimit; i++) {
           m.push(this.products[i])
         }
       }
-      console.log(m)
       this.visibleProducts = m
     }
   }

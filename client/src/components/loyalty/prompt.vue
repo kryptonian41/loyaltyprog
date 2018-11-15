@@ -1,33 +1,23 @@
 <template>
-  <v-dialog
-      v-model="dialog"
-      max-width="290"
+    <v-dialog
+      v-model="loyaltyPromptVisible"
     >
       <v-card>
-        <v-card-title class="headline">Not a Loyal Customer</v-card-title>
+        <v-card-title class="headline">Oops!</v-card-title>
 
         <v-card-text>
-          Sorry! This section is available to only Gold customers.
+          Sorry! This section is available to only Gold and Platinum customers.
           Current Level: {{ loyaltyLevel }}
         </v-card-text>
 
         <v-card-actions>
           <v-spacer></v-spacer>
-
           <v-btn
             color="green darken-1"
             flat="flat"
-            @click="dialog = false"
+            @click="hideLoyaltyPrompt"
           >
-            Disagree
-          </v-btn>
-
-          <v-btn
-            color="green darken-1"
-            flat="flat"
-            @click="dialog = false"
-          >
-            Agree
+            Close
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -35,10 +25,14 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
+
 export default {
   computed: {
-    ...mapState(['loyaltyLevel'])
+    ...mapState(['loyaltyLevel', 'loyaltyPromptVisible'])
+  },
+  methods: {
+    ...mapMutations(['hideLoyaltyPrompt'])
   }
 }
 </script>

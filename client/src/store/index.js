@@ -16,6 +16,7 @@ export const store = new Vuex.Store({
     user: null,
     userData: null,
     loyaltyPromptVisible: false,
+    levelUpPromptVisible: false,
     loyaltyLevel: null
   },
   getter: {
@@ -46,6 +47,12 @@ export const store = new Vuex.Store({
     },
     setLoyaltyString(state, level) {
       state.loyaltyLevel = level
+    },
+    showLevelDialog(state) {
+      levelUpPromptVisible = true
+    },
+    hideLevelupDialog(state) {
+      levelUpPromptVisible = false
     }
   },
   // note: actions call mutations but we can write async code in actions
