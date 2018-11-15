@@ -4,10 +4,11 @@
       max-width="290"
     >
       <v-card>
-        <v-card-title class="headline">Use Google's location service?</v-card-title>
+        <v-card-title class="headline">Not a Loyal Customer</v-card-title>
 
         <v-card-text>
-          Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+          Sorry! This section is available to only Gold customers.
+          Current Level: {{ loyaltyLevel }}
         </v-card-text>
 
         <v-card-actions>
@@ -34,7 +35,12 @@
 </template>
 
 <script>
-export default {}
+import { mapState } from 'vuex'
+export default {
+  computed: {
+    ...mapState(['loyaltyLevel'])
+  }
+}
 </script>
 
 <style>

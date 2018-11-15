@@ -1,5 +1,5 @@
 const firebase = require('firebase-admin')
-const db = firebase.database()
+const db = firebase.firestore()
 
 const getAllProducts = () => {
   return db

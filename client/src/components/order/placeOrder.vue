@@ -3,13 +3,13 @@
     <v-dialog v-model="open" fullscreen hide-overlay transition="dialog-bottom-transition">
       <v-card>
         <v-toolbar dark color="primary">
-          <v-btn icon dark @click.native="dialog = false">
+          <v-btn icon dark @click.native="close">
             <v-icon>close</v-icon>
           </v-btn>
-          <v-toolbar-title>Settings</v-toolbar-title>
+          <v-toolbar-title>Place Order</v-toolbar-title>
           <v-spacer></v-spacer>
           <v-toolbar-items>
-            <v-btn dark flat @click.native="dialog = false">Save</v-btn>
+            <v-btn dark flat @click.native="close">Checkout</v-btn>
           </v-toolbar-items>
         </v-toolbar>
         <v-list three-line subheader>
@@ -32,7 +32,7 @@
           <v-subheader>General</v-subheader>
           <v-list-tile avatar>
             <v-list-tile-action>
-              <v-checkbox v-model="notifications"></v-checkbox>
+              <v-checkbox></v-checkbox>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>Notifications</v-list-tile-title>
@@ -41,7 +41,7 @@
           </v-list-tile>
           <v-list-tile avatar>
             <v-list-tile-action>
-              <v-checkbox v-model="sound"></v-checkbox>
+              <v-checkbox></v-checkbox>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>Sound</v-list-tile-title>
@@ -50,7 +50,7 @@
           </v-list-tile>
           <v-list-tile avatar>
             <v-list-tile-action>
-              <v-checkbox v-model="widgets"></v-checkbox>
+              <v-checkbox></v-checkbox>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>Auto-add widgets</v-list-tile-title>

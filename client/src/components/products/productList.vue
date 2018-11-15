@@ -1,17 +1,17 @@
 <template>
-  <v-container grid-list-md>
+  <v-container grid-list-lg v-if="productsAvailable">
     <v-layout row wrap>
-      <v-flex xs12 md6 lg3 xl3 v-for="(product, index) in products" :key="index">
-        <product-list-item :product="product" :buyNow="buyNow(product)"></product-list-item>
+      <v-flex xs6 md6 lg3 xl3 v-for="(product, index) in visibleProducts" :key="index">
+        <product-list-item :product="product" :buy="() => buyNow(product)"></product-list-item>
       </v-flex>
     </v-layout>
-    <v-layout column>
+    <v-layout row align-center>
       <v-pagination
         v-model="currentPage"
         :length="paginationLength"
       ></v-pagination>
     </v-layout>
-    <place-order :product="selectedProduct" :open="open" :close="open = false"></place-order>
+    <place-order :product="selectedProduct" :open="open" :close="() => {open = false}" v-if="selectedProduct"></place-order>
   </v-container>
 </template>
 
@@ -27,10 +27,11 @@ export default {
       currentPage: 1,
       itemsPerPage: 12,
       selectedProduct: null,
-      open: false
+      open: false,
+      visibleProducts: []
     }
   },
-  created: async () => {
+  async created() {
     this.products = await axios.get('/api/products/all').then(res => res.data)
   },
   components: {
@@ -38,29 +39,52 @@ export default {
     PlaceOrder
   },
   computed: {
-    visibleProducts: () => {
-      const visibleProducts = []
-      const self = this
-      const lowerLimit = self.currentPage - 1 * self.itemsPerPage
-      const upperLimit =
-        this.currentPage === this.paginationLength
-          ? this.products.length
-          : self.currentPage * self.itemsPerPage
-      // Selecting a range of products for pagination
-      for (let i = lowerLimit; i < upperLimit; i++) {
-        const element = array[i]
-        visibleProducts.push(this.products[i])
-      }
-      return visibleProducts
+    productsAvailable() {
+      return this.products.length > 0 ? true : false
     },
-    paginationLength: () => {
-      return Math.ceil(this.products.length / this.itemsPerPage)
+    paginationLength() {
+      if (this.productsAvailable) {
+        return Math.ceil(this.products.length / this.itemsPerPage)
+      }
+      return 0
+    }
+  },
+  watch: {
+    products: function() {
+      if (this.productsAvailable) {
+        this.setVisbileProducts()
+      }
+    },
+    currentPage: function() {
+      if (this.productsAvailable) {
+        this.setVisbileProducts()
+      }
     }
   },
   methods: {
-    buyNow: product => {
+    buyNow(product) {
       this.open = true
       this.selectedProduct = product
+    },
+    setVisbileProducts() {
+      const m = []
+      if (this.productsAvailable) {
+        console.log(this.currentPage)
+        console.log(this.itemsPerPage)
+        const lowerLimit = (this.currentPage - 1) * this.itemsPerPage
+        console.log('​setVisbileProducts -> lowerLimit', lowerLimit)
+        const upperLimit =
+          this.currentPage === this.paginationLength
+            ? this.products.length
+            : this.currentPage * this.itemsPerPage
+        console.log(upperLimit)
+        // Selecting a range of products for pagination
+        for (let i = lowerLimit; i < upperLimit; i++) {
+          m.push(this.products[i])
+        }
+      }
+      console.log(m)
+      this.visibleProducts = m
     }
   }
 }

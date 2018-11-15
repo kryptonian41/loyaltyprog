@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import firebase from 'firebase'
+import { getLevel } from '@/helpers'
 
 Vue.use(Vuex)
 
@@ -14,7 +15,8 @@ export const store = new Vuex.Store({
   state: {
     user: null,
     userData: null,
-    loyaltyPromptVisible: false
+    loyaltyPromptVisible: false,
+    loyaltyLevel: null
   },
   getter: {
     counterTwice: state => state.counter * 2
@@ -41,6 +43,9 @@ export const store = new Vuex.Store({
         return
       }
       state.loyaltyPromptVisible = false
+    },
+    setLoyaltyString(state, level) {
+      state.loyaltyLevel = level
     }
   },
   // note: actions call mutations but we can write async code in actions
@@ -62,7 +67,14 @@ export const store = new Vuex.Store({
         .collection('users')
         .doc(store.state.user.uid)
         .get()
-      store.commit('fetchedUserData', userDoc.data())
+      console.log(userDoc.data())
+      if (userDoc.data()) {
+        store.commit('fetchedUserData', userDoc.data())
+        store.commit(
+          'setLoyaltyString',
+          getLevel(store.state.userData.loyaltyLevel)
+        )
+      }
     }
   }
 })

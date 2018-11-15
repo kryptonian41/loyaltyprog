@@ -21,6 +21,13 @@
                 required
               ></v-text-field>
               <v-text-field
+                v-model="pno"
+                :rules="pnoRules"
+                label="Contact No."
+                type="number"
+                required
+              ></v-text-field>
+              <v-text-field
                 v-model="pass"
                 :rules="passRules"
                 label="Password"
@@ -60,6 +67,7 @@
 <script>
 import firebase from 'firebase'
 import uuid from 'uuid'
+import { createNewUserSchema } from '@/helpers'
 
 export default {
   data() {
@@ -69,6 +77,11 @@ export default {
       email: '',
       pass: '',
       cpass: '',
+      pno: null,
+      pnoRules: [
+        v => !!v || 'Contact Number is required',
+        v => /^[0-9]{10}$/.test(v) || 'Contact Number must be valid'
+      ],
       nameRules: [v => !!v || 'Name is required'],
       emailRules: [
         v => !!v || 'E-mail is required',
@@ -100,6 +113,17 @@ export default {
         await user.updateProfile({
           displayName: self.name
         })
+        const { email, name, pno } = this
+        const userData = createNewUserSchema({
+          email,
+          name,
+          pno
+        })
+        await db
+          .collection('users')
+          .doc(user.uid)
+          .set(user)
+        this.$store.dispatch('fetchUserData')
         this.loading = false
         this.$router.push('/')
       }

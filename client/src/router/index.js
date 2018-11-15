@@ -3,7 +3,10 @@ import Router from 'vue-router'
 import Login from '@/components/authentication/Login'
 import SignUp from '@/components/authentication/SignUp'
 import Profile from '@/components/user/ProfilePage'
-import LoyaltyInfo from '@/components/loyalty/info'
+import LoyaltyBroucher from '@/components/loyalty/broucher'
+import Products from '@/components/products/productList'
+import SurveyList from '@/components/surveys/surveyList'
+import SampleSurvey from '@/components/surveys/survey'
 
 Vue.use(Router)
 
@@ -13,7 +16,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Profile
+      component: Products
     },
     {
       path: '/login',
@@ -33,7 +36,17 @@ export default new Router({
     {
       path: '/loyalStatus',
       name: 'loyaltyStatus',
-      component: LoyaltyInfo
+      component: LoyaltyBroucher
+    },
+    {
+      path: '/surveys',
+      name: 'surveyList',
+      component: SurveyList
+    },
+    {
+      path: '/surveys/sample',
+      name: 'sampleSurvey',
+      component: SampleSurvey
     }
   ]
 })

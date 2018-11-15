@@ -14,24 +14,29 @@
         </v-list-tile-action>
         <v-list-tile-title>Profile</v-list-tile-title>
       </v-list-tile>
-
+      <v-list-tile to="/surveys">
+        <v-list-tile-action>
+          <v-icon>done_all</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-title>Surveys</v-list-tile-title>
+      </v-list-tile>
       <v-list-group
         prepend-icon="assessment"
         value="true"
       >
-          <v-list-tile slot="activator" :to="{name: ''}">
+          <v-list-tile slot="activator">
             <v-list-tile-title>Catalogues</v-list-tile-title>
           </v-list-tile>
-          <v-list-tile :to="{name: ''}">
-            <v-list-tile-title>Create</v-list-tile-title>
+          <v-list-tile :to="'/catalogue/premium'">
+            <v-list-tile-title>Premium Catalogue</v-list-tile-title>
             <v-list-tile-action>
-              <v-icon>add_circle</v-icon>
+              <v-icon>stars</v-icon>
             </v-list-tile-action>
           </v-list-tile>
-          <v-list-tile :to="{name: ''}">
-            <v-list-tile-title>Take Attendence</v-list-tile-title>
+          <v-list-tile :to="'/catalogue/liked'">
+            <v-list-tile-title>Liked Catalogues</v-list-tile-title>
             <v-list-tile-action>
-              <v-icon>how_to_reg</v-icon>
+              <v-icon>favorite</v-icon>
             </v-list-tile-action>
           </v-list-tile>
         </v-list-group>
@@ -74,13 +79,7 @@ export default {
   data() {
     return {
       drawer: false,
-      items: [
-        {
-          icon: 'account_circle',
-          title: 'Profile'
-        }
-      ],
-      title: 'Loyals'
+      title: 'Dellcommerce'
     }
   },
   computed: {
@@ -103,7 +102,6 @@ export default {
       }
       // marking that the user is logged in and then fetching user date from firestore
       self.userLoggedIn(user)
-      console.log(user)
       self.fetchUserData()
     })
   },
