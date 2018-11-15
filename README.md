@@ -1,12 +1,12 @@
-# Apimedix
+# Dell E-Commerce Loyalty Programme
 
-This is a assignment project for **Innovaccer's Hackercamp 2019**.
+This is a assignment project for **Dell's Intership Programme 2018**.
 
 **Overview** - The web app is served by a backend server coded using Node.js and the frontend side of the app in implemented using Vue.js. The web app has been hosted on Heroku.
 
 ## Demo
 
-You can view the live example [here](https://apimedix.herokuapp.com).
+You can view the live example [here](https://delloyalty.herokuapp.com).
 
 ## Folder Structure
 
@@ -19,19 +19,13 @@ You can view the live example [here](https://apimedix.herokuapp.com).
 ### Backend
 
 1. Node.js - To set up the server
-2. MongoDb
+2. NoSQL Database - Firebase
 3. Axios - To make API calls
-4. Cheerio - JQuery alternative for the server
-   - Used for scrapping data from web.
 
 ### Frontend
 
 1. Vue.js
 2. Webpack
-
-### Testing
-
-Using Jest for both frontend and backend unit testing.
 
 ---
 
@@ -56,6 +50,6 @@ Default port configuration
 - Node server - 4000
 - Vue development server - 8080
 
-Go to localhost:8080, the proxy is already setup so that our vue dev server can communicate with our node server.
+Click [here](http://localhost:8080) to open the web app, the proxy is already setup so that our vue dev server can communicate with our node server.
 
 ---

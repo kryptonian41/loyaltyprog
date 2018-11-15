@@ -19,16 +19,16 @@
         prepend-icon="assessment"
         value="true"
       >
-          <v-list-tile slot="activator" :to="{name: 'classes'}">
+          <v-list-tile slot="activator" :to="{name: ''}">
             <v-list-tile-title>Catalogues</v-list-tile-title>
           </v-list-tile>
-          <v-list-tile :to="{name: 'createClass'}">
+          <v-list-tile :to="{name: ''}">
             <v-list-tile-title>Create</v-list-tile-title>
             <v-list-tile-action>
               <v-icon>add_circle</v-icon>
             </v-list-tile-action>
           </v-list-tile>
-          <v-list-tile :to="{name: 'attendence'}">
+          <v-list-tile :to="{name: ''}">
             <v-list-tile-title>Take Attendence</v-list-tile-title>
             <v-list-tile-action>
               <v-icon>how_to_reg</v-icon>
@@ -103,6 +103,7 @@ export default {
       }
       // marking that the user is logged in and then fetching user date from firestore
       self.userLoggedIn(user)
+      console.log(user)
       self.fetchUserData()
     })
   },

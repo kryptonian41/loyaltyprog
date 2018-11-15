@@ -100,6 +100,8 @@ export default {
         await user.updateProfile({
           displayName: self.name
         })
+        this.loading = false
+        this.$router.push('/')
       }
     },
     clear() {

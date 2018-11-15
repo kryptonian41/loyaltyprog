@@ -30,12 +30,17 @@ export const store = new Vuex.Store({
     fetchedUserData(state, data) {
       state.userData = data
     },
-    toggleLoyaltyPrompt(state) {
-      // never show the loyalty prompt if the user has already earned a loyalty badge
+    showLoyaltyPrompt(state) {
       if (state.userData.isLoyal) {
         return
       }
-      state.loyaltyPromptVisible = !state.loyaltyPromptVisible
+      state.loyaltyPromptVisible = true
+    },
+    hideLoyaltyPrompt(state) {
+      if (state.userData.isLoyal) {
+        return
+      }
+      state.loyaltyPromptVisible = false
     }
   },
   // note: actions call mutations but we can write async code in actions
