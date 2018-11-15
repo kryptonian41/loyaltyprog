@@ -7,10 +7,16 @@ import LoyaltyBroucher from '@/components/loyalty/broucher'
 import Products from '@/components/products/productList'
 import SurveyList from '@/components/surveys/surveyList'
 import SampleSurvey from '@/components/surveys/survey'
+import PremiumCatalogue from '@/components/catalogue/premium'
+import CatalogueList from '@/components/catalogue/catalogueList'
+// import VUEX store
+import store from '@/store'
+// import helpers
+import { levels } from '@/helpers'
 
 Vue.use(Router)
 
-export default new Router({
+export const router = new Router({
   mode: 'history',
   routes: [
     {
@@ -31,7 +37,8 @@ export default new Router({
     {
       path: '/profile',
       name: 'profile',
-      component: Profile
+      component: Profile,
+      meta: { requiresAuth: true }
     },
     {
       path: '/loyalStatus',
@@ -41,12 +48,62 @@ export default new Router({
     {
       path: '/surveys',
       name: 'surveyList',
-      component: SurveyList
+      component: SurveyList,
+      beforeEnter: (to, from, next) => {
+        if (store.state.loyaltyLevel === levels.NONE) {
+          store.commit('showLoyaltyPrompt')
+          // about the route navigation
+          next(false)
+          return
+        }
+        next()
+      }
     },
     {
       path: '/surveys/sample',
       name: 'sampleSurvey',
       component: SampleSurvey
+    },
+    {
+      path: '/catalogue/premium',
+      name: 'premiumCat',
+      component: PremiumCatalogue,
+      beforeEnter: (to, from, next) => {
+        if (
+          store.state.loyaltyLevel === levels.SILVER ||
+          store.state.loyaltyLevel === levels.NONE
+        ) {
+          store.commit('showLoyaltyPrompt')
+          // about the route navigation
+          next(false)
+          return
+        }
+        next()
+      }
+    },
+    {
+      path: '/catalogue/list',
+      name: 'catList',
+      component: CatalogueList
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+    // this route requires auth, check if logged in
+    // if not, redirect to login page.
+    if (!store.state.user) {
+      next({
+        path: '/login',
+        query: { redirect: to.fullPath }
+      })
+    } else {
+      next()
+    }
+  } else {
+    next() // make sure to always call next()!
+  }
+})
+
+export default router

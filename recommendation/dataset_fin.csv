@@ -1,0 +1,1001 @@
+user_id,prod_id,prod_name,prod_count
+mulsz,27339,hp mouse,20
+mulsz,89512,logitech mouse,23
+mulsz,80111,hp monitor,17
+mulsz,61582,dell mouse,13
+mulsz,90783,dell laptop,16
+mulsz,67105,alienware laptop,10
+mulsz,26167,hp laptop,11
+mulsz,93934,hp desktop,19
+mulsz,21794,wd harddisk,20
+mulsz,38287,laptop skin,14
+mulsz,20904,hp mouse,16
+mulsz,99666,msi laptop,14
+mulsz,57774,acer laptop,22
+mulsz,94533,usb led light,25
+mulsz,92486,mousepad,17
+mulsz,47730,keyboard skin,19
+mulsz,29619,seagate harddisk,21
+mulsz,31776,toshiba harddisk,20
+mulsz,84639,hp laptop,17
+mulsz,74590,dell laptop,17
+mulsz,3633,alienware laptop,21
+mulsz,95055,hp laptop,23
+mulsz,88800,hp mouse,20
+mulsz,13295,desktop webcam,18
+mulsz,43677,alienware laptop,20
+mulsz,30948,msi laptop,23
+mulsz,65163,sony pendrive,18
+mulsz,24681,audio adapter for pc,10
+mulsz,91574,msi laptop,13
+mulsz,30398,marshmello laptop skin,10
+mulsz,47127,dell laptop,24
+mulsz,54522,toshiba pendrive,18
+mulsz,62043,hp mouse,25
+mulsz,61504,dell mouse,20
+mulsz,76256,hp mouse,22
+mulsz,33737,seagate harddisk,25
+mulsz,96519,sandisk pendrive,19
+mulsz,8921,msi laptop,23
+mulsz,97517,sony pendrive,15
+mulsz,80253,msi laptop,22
+mulsz,91052,kingston pendrive,10
+mulsz,77354,wd harddisk,12
+mulsz,72580,sony pendrive,11
+mulsz,61287,hp keyboard,14
+mulsz,91717,msi laptop,25
+mulsz,90687,hp pendrive,14
+mulsz,99408,sandisk pendrive,23
+mulsz,43710,acer keyboard,22
+mulsz,46870,kingston pendrive,24
+imygo,43469,samsung mobile,21
+imygo,80534,oneplus mobile,23
+imygo,39451,samsung mobile,17
+imygo,87742,oneplus mobile,14
+imygo,15604,asus mobile,13
+imygo,4566,vivo mobile,13
+imygo,65802,vivo mobile,15
+imygo,71925,oppo mobile,16
+imygo,72249,lenovo mobile,11
+imygo,38497,nokia mobile,19
+imygo,10164,redmi mobile,11
+imygo,76761,realme mobile ,22
+imygo,20385,realme mobile ,25
+imygo,38455,honor mobile,24
+imygo,24204,asus mobile,16
+imygo,76745,blackberry mobile,15
+imygo,91482,blackberry mobile,17
+imygo,47829,samsung mobile,22
+imygo,70585,oneplus mobile,13
+imygo,35537,asus mobile,16
+imygo,89517,mobile hholder,20
+imygo,88903,mobile stand,18
+imygo,12990,mobile popholder,11
+imygo,5694,mobile charger,12
+imygo,9971,oneplus case,13
+imygo,85043,samsung case,12
+imygo,16002,vivo case,21
+imygo,72819,oppo case,19
+imygo,89815,oneplus case,23
+imygo,34217,lenovo case,16
+imygo,62220,nokia case,10
+imygo,27168,oneplus dashcharger,18
+imygo,40617,oneplus dashcharger,21
+imygo,72805,mobile popholder,11
+imygo,17318,mobile guard,15
+imygo,39081,mobile tempered,14
+imygo,78893,asus mobile,16
+imygo,53408,blackberry mobile,12
+imygo,88315,oneplus dashcharger,13
+imygo,4276,usb cable 12,17
+imygo,82813,usb cable 12,20
+imygo,62927,oneplus dashcharger,14
+imygo,29839,oneplus mobile,18
+imygo,67313,samsung mobile,11
+imygo,44007,oneplus mobile,11
+imygo,73527,samsung mobile,14
+imygo,78612,oneplus mobile,23
+imygo,99833,oneplus dashcharger,12
+imygo,79553,oneplus case,18
+imygo,80469,oneplus case,25
+wagtq,88691,mixer ,10
+wagtq,48295,juicer,14
+wagtq,92549,sandwich maker,24
+wagtq,44801,chimney,13
+wagtq,92111,ice cream maker,20
+wagtq,7012,soup maker,14
+wagtq,53682,hand blender,20
+wagtq,81920,induction cooktop,24
+wagtq,6052,cakemaker,21
+wagtq,29530,coffee maker,11
+wagtq,24366,electric pan,20
+wagtq,68710,hand blender,15
+wagtq,39988,egg cooker,24
+wagtq,99176,oven toaster,20
+wagtq,78050,cake maker,12
+wagtq,50801,wet grinder,20
+wagtq,24962,ice cream maker,16
+wagtq,51167,coffee maker,11
+wagtq,10817,microwave over,22
+wagtq,92031,dish washer,24
+wagtq,58567,electric pan,16
+wagtq,72473,induction cooktop,17
+wagtq,9927,egg cooker,10
+wagtq,95867,pop up taoster,14
+wagtq,59234,microwave over,24
+wagtq,64105,microwave over,20
+wagtq,44336,electric pan,24
+wagtq,34475,dish washer,11
+wagtq,85972,soup maker,11
+wagtq,89223,ice cream maker,12
+wagtq,51104,soup maker,12
+wagtq,72441,coffee maker,13
+wagtq,10758,microwave over,10
+wagtq,3771,oven toaster,24
+wagtq,19417,air fryers,20
+wagtq,44964,pop up taoster,11
+wagtq,38789,electric pan,21
+wagtq,24087,induction cooktop,16
+wagtq,59739,dish washer,19
+wagtq,26394,pop corn maker,11
+wagtq,71207,donut maker ,19
+wagtq,90524,roti maker,12
+wagtq,19247,cup cake maker ,20
+wagtq,47636,cotton candy maker ,11
+wagtq,33368,pop up taoster,21
+wagtq,64503,dish washer,17
+wagtq,10657,microwave over,14
+wagtq,92558,deep fryers,10
+wagtq,52727,pop up taoster,23
+wagtq,39929,roti maker,10
+wypeo,39534,aldo sneaker,12
+wypeo,77330,zara sneaker,11
+wypeo,85000,reebok sport shoes,10
+wypeo,7935,zara sneaker,10
+wypeo,35379,zara mocs,25
+wypeo,55523,woodland sneakers,25
+wypeo,50393,hm flats,10
+wypeo,78845,hm flats,10
+wypeo,5416,asics sport shoes,20
+wypeo,76843,zara mocs,19
+wypeo,51561,zara sneaker,12
+wypeo,52809,asics sport shoes,21
+wypeo,56732,supra sneakers,23
+wypeo,95136,woodland sneakers,22
+wypeo,57104,adidas sneaker,19
+wypeo,14393,nike sneaker,10
+wypeo,76859,reebok sport shoes,21
+wypeo,36630,reebok sneaker,17
+wypeo,24296,jordans sneaker,22
+wypeo,7989,reebok sneaker,15
+wypeo,71187,woodland sneakers,17
+wypeo,89174,woodland sneakers,21
+wypeo,5070,hush puppies sneaker,24
+wypeo,99037,power shoes,13
+wypeo,73483,fila shoes,11
+wypeo,77088,fila shoes,13
+wypeo,98141,woodland sneakers,20
+wypeo,83040,zara sneaker,14
+wypeo,63287,hm flats,21
+wypeo,40708,asics sport shoes,21
+wypeo,27788,adidas sneaker,12
+wypeo,45046,nike sneaker,14
+wypeo,52110,adidas sneaker,20
+wypeo,68248,nike sneaker,18
+wypeo,77376,prada sneakers,20
+wypeo,57540,gucci  sneakers,20
+wypeo,89153,prada sneakers,10
+wypeo,43375,gucci  sneakers,10
+wypeo,42653,adidas sneaker,14
+wypeo,80357,nike sneaker,24
+wypeo,91814,reebok sneaker,11
+wypeo,93795,nike sneaker,11
+wypeo,4074,zara sneaker,19
+wypeo,37889,zara sneaker,24
+wypeo,75765,hm flats,18
+wypeo,98366,woodland sneakers,19
+wypeo,13119,hm flats,16
+wypeo,89293,woodland sneakers,17
+wypeo,98183,reebok sneaker,12
+wypeo,75474,asics sport shoes,13
+wpbvq,60442,fastrack watch,18
+wpbvq,25352,titan watch,18
+wpbvq,27736,fossil watch,12
+wpbvq,54007,timex watch ,22
+wpbvq,6111,maxima watch,12
+wpbvq,99049,armani watch,24
+wpbvq,52985,guess watch,21
+wpbvq,89598,diesel watch,18
+wpbvq,46473,chemistry watch,25
+wpbvq,23252,fossil watch,16
+wpbvq,73939,casio watch,13
+wpbvq,12563,casio watch,20
+wpbvq,63225,sonata watch,15
+wpbvq,37315,maxima watch,16
+wpbvq,33830,fossil watch,15
+wpbvq,6247,fastrack watch,22
+wpbvq,27246,titan watch,22
+wpbvq,15684,geniva watch ,18
+wpbvq,57598,tommy watch ,13
+wpbvq,57870,fossil watch,14
+wpbvq,54249,nike watch,20
+wpbvq,33873,nike watch,10
+wpbvq,22330,casio watch,22
+wpbvq,9440,chemistry watch,23
+wpbvq,98320,armani watch,15
+wpbvq,43813,armani watch,17
+wpbvq,55276,diesel watch,20
+wpbvq,6207,chemistry watch,18
+wpbvq,29662,fossil watch,23
+wpbvq,77227,casio watch,16
+wpbvq,85163,casio watch,25
+wpbvq,55226,adidas watch,12
+wpbvq,67438,geniva watch ,12
+wpbvq,64086,fastrack watch,25
+wpbvq,22516,titan watch,17
+wpbvq,28126,sonata watch,10
+wpbvq,14220,timex watch ,13
+wpbvq,36734,sonata watch,18
+wpbvq,50727,nike watch,22
+wpbvq,9717,nike watch,25
+wpbvq,14669,timex watch ,19
+wpbvq,61089,timex watch ,21
+wpbvq,53893,fossil watch,18
+wpbvq,53641,diesel watch,23
+wpbvq,2339,diesel watch,22
+wpbvq,44812,fossil watch,21
+wpbvq,15347,casio watch,25
+wpbvq,53169,roadster watch,18
+wpbvq,24421,casio watch,10
+wpbvq,14267,casio watch,20
+rfaik,39174,kookaburra bat,17
+rfaik,55980,redmax bat,22
+rfaik,40215,kookaburra bat,23
+rfaik,21828,tennis ball ,18
+rfaik,2513,mrf bat,25
+rfaik,70086,mrf bat,12
+rfaik,74364,cricket net,10
+rfaik,11933,kookaburra bat,18
+rfaik,87989,cricket net,20
+rfaik,42762,cricket pads,11
+rfaik,73004,cricket pads,11
+rfaik,74871,red leather ball,16
+rfaik,26007,leather ball,21
+rfaik,73236,red leather ball,15
+rfaik,78870,cricket net,22
+rfaik,44930,kookaburra bat,15
+rfaik,79271,mrf bat,20
+rfaik,54956,ss bat,25
+rfaik,2051,ss bat,13
+rfaik,52815,ss bat,24
+rfaik,42562,kit bag,11
+rfaik,38835,spartan bat,14
+rfaik,67527,mrf bat,11
+rfaik,66717,leather ball,23
+rfaik,9071,red leather ball,17
+rfaik,83,sg bats,25
+rfaik,85595,sg bats,11
+rfaik,7693,red leather ball,14
+rfaik,76793,leather ball,22
+rfaik,88035,cricket net,25
+rfaik,28355,wickets ,22
+rfaik,1005,tennis ball ,22
+rfaik,5571,spartan bat,25
+rfaik,12813,cricket net,10
+rfaik,78243,leather ball,14
+rfaik,90216,sg bats,13
+rfaik,77650,leather ball,20
+rfaik,34318,kookaburra bat,19
+rfaik,84643,mrf bat,23
+rfaik,89163,mrf bat,19
+rfaik,42476,sg bats,13
+rfaik,12877,spartan bat,24
+rfaik,93127,spartan bat,24
+rfaik,14273,sg bats,25
+rfaik,99371,spartan bat,16
+rfaik,22884,leather ball,11
+rfaik,79666,wickets ,16
+rfaik,98302,cricket net,25
+rfaik,21242,kookaburra bat,21
+rfaik,14475,spartan bat,11
+cktuj,10913,one indian girl,12
+cktuj,81412,life is what you make it,25
+cktuj,65135,one indian girl,25
+cktuj,8176,indian polity,17
+cktuj,71654,indian polity,15
+cktuj,40823,everyone has a story ,19
+cktuj,87348,everyone has a story ,21
+cktuj,13678,wings of fire,20
+cktuj,48450,life is what you make it,17
+cktuj,30466,the girl in room 105,16
+cktuj,61856,awareness science,16
+cktuj,34176,arihant bitsat,16
+cktuj,48778,ancient and medieval india,21
+cktuj,86818,arihant bitsat,19
+cktuj,60058,indian polity,19
+cktuj,34219,one indian girl,13
+cktuj,50751,the girl in room 105,10
+cktuj,37924,life's amazing secrets,22
+cktuj,87348,one indian girl,18
+cktuj,45366,the girl in room 105,13
+cktuj,99915,life's amazing secrets,20
+cktuj,96723,arihant bitsat,19
+cktuj,13382,arihant bitsat,18
+cktuj,70835,five lies my teacher told me,10
+cktuj,83096,awareness science,18
+cktuj,53837,wings of fire,23
+cktuj,98878,everyone has a story ,10
+cktuj,17661,indian polity,24
+cktuj,50062,one indian girl,21
+cktuj,16869,indian polity,21
+cktuj,47998,the girl in room 105,11
+cktuj,86312,the girl in room 105,17
+cktuj,7748,one indian girl,21
+cktuj,50673,revolutio 2020,23
+cktuj,44384,arihant bitsat,18
+cktuj,24004,the girl in room 105,21
+cktuj,38039,one indian girl,22
+cktuj,14851,half girlfriend,18
+cktuj,47681,revolutio 2020,17
+cktuj,29679,the girl in room 105,10
+cktuj,47519,one indian girl,25
+cktuj,96472,arihant bitsat,14
+cktuj,42646,arihant bitsat,16
+cktuj,86825,one indian girl,20
+cktuj,950,five point someone,23
+cktuj,1014,revolutio 2020,15
+cktuj,99132,one indian girl,21
+cktuj,31944,five point someone,12
+cktuj,96864,arihant bitsat,21
+cktuj,65842,revolutio 2020,22
+kvxxb,65098,nivea facewash ,24
+kvxxb,42852,nivea shaving cream ,14
+kvxxb,87883,axe deo,20
+kvxxb,97597,jaguar perfume ,18
+kvxxb,7630,axe deo,22
+kvxxb,27828,nivea facewash ,16
+kvxxb,34302,nivea deo ,14
+kvxxb,47525,beardo oil ,22
+kvxxb,3451,ustraa oil ,11
+kvxxb,92739,jaguar perfume ,19
+kvxxb,59260,gatsby gel,14
+kvxxb,21413,himalya facewash,23
+kvxxb,63542,himalya facewash,16
+kvxxb,94798,gatsby gel,16
+kvxxb,1113,nivea deo ,12
+kvxxb,58406,nivea facewash ,25
+kvxxb,63681,beardo oil ,24
+kvxxb,60135,ustraa oil ,17
+kvxxb,99279,jaguar perfume ,13
+kvxxb,70241,bvlgari perfume ,11
+kvxxb,56487,axe deo,16
+kvxxb,10968,wildstone deo,18
+kvxxb,78989,bogart perfume,20
+kvxxb,72246,bogart perfume,23
+kvxxb,98680,jaguar perfume ,22
+kvxxb,83268,axe deo,23
+kvxxb,38928,wildstone deo,23
+kvxxb,67785,nivea deo ,25
+kvxxb,11027,nivea facewash ,22
+kvxxb,79986,axe deo,11
+kvxxb,3751,himalya facewash,19
+kvxxb,49841,garnier facewash,23
+kvxxb,10537,nivea deo ,24
+kvxxb,5092,patanjali facewash,18
+kvxxb,74662,patanjali gel,22
+kvxxb,46711,nivea deo ,25
+kvxxb,30446,jaguar perfume ,12
+kvxxb,59737,nivea deo ,24
+kvxxb,41899,gatsby gel,10
+kvxxb,55602,ustraa oil ,12
+kvxxb,82702,beardo oil ,22
+kvxxb,77211,bvlgari perfume ,13
+kvxxb,75774,bvlgari perfume ,19
+kvxxb,46909,axe deo,23
+kvxxb,64162,jaguar perfume ,16
+kvxxb,78601,nivea dep,13
+kvxxb,66078,wildstone deo,12
+kvxxb,22103,nivea washer,13
+kvxxb,15127,ustraa oil ,10
+kvxxb,79513,beardo oil ,14
+hyvrn,61987,saree,23
+hyvrn,78514,kurti,16
+hyvrn,59768,kameez,12
+hyvrn,10857,blouse,21
+hyvrn,23692,gown,24
+hyvrn,49402,petticoat,21
+hyvrn,73601,burqa,18
+hyvrn,45071,fabric,23
+hyvrn,43816,kameez,15
+hyvrn,11846,saree,24
+hyvrn,80252,suit,11
+hyvrn,12310,suit,23
+hyvrn,77735,salwaar,25
+hyvrn,38961,kameez,25
+hyvrn,74340,blouse,25
+hyvrn,9092,petticoat,11
+hyvrn,10709,salwaar,23
+hyvrn,1280,gown,19
+hyvrn,77708,saree,23
+hyvrn,2462,dupatta ,21
+hyvrn,6060,petticoat,20
+hyvrn,53574,saree,13
+hyvrn,50099,kameez,18
+hyvrn,15713,suit,22
+hyvrn,98628,salwaar,13
+hyvrn,33112,kameez,11
+hyvrn,5026,kurti,17
+hyvrn,26375,gown,24
+hyvrn,88248,saree,12
+hyvrn,88073,blouse,10
+hyvrn,75509,kameez,21
+hyvrn,6020,petticoat,23
+hyvrn,82521,suit,19
+hyvrn,41652,salwaar,10
+hyvrn,93236,gown,11
+hyvrn,47179,petticoat,23
+hyvrn,18310,suit,17
+hyvrn,89604,blouse,16
+hyvrn,87281,saree,19
+hyvrn,35431,kurti,20
+hyvrn,59460,salwaar,24
+hyvrn,8068,gown,22
+hyvrn,75436,saree,10
+hyvrn,96768,petticoat,14
+hyvrn,75484,kameez,10
+hyvrn,13635,salwaar,18
+hyvrn,11391,petticoat,20
+hyvrn,16528,kurti,10
+hyvrn,64510,petticoat,11
+hyvrn,89033,salwaar,13
+topqs,88541,gloves,25
+topqs,4213,shaker,11
+topqs,83339,hand grip,22
+topqs,21559,fitness ball,19
+topqs,16052,fitness bench,24
+topqs,95168,skipping rope,25
+topqs,39779,shaker,21
+topqs,5780,gloves,20
+topqs,95398,kettlebell,19
+topqs,2300,dumbell,15
+topqs,22313,fitness bar,17
+topqs,77322,treadmill,10
+topqs,10906,dumbell,15
+topqs,22120,shaker,23
+topqs,30812,protein bar,19
+topqs,17838,protein bar,16
+topqs,14754,mass gainer,12
+topqs,74478,mass gainer,16
+topqs,63714,treadmill,23
+topqs,5200,skipping rope,20
+topqs,56592,protein bar,12
+topqs,4344,shaker,16
+topqs,74112,gloves,21
+topqs,86707,kettlebell,14
+topqs,54477,gloves,23
+topqs,93083,shaker,16
+topqs,48037,protein bar,25
+topqs,36855,treadmill,18
+topqs,39220,dumbell,18
+topqs,55761,dumbell,14
+topqs,28824,yoga mat,18
+topqs,40358,yoga mat,13
+topqs,86187,gloves,20
+topqs,49780,kettlebell,10
+topqs,55108,mass gainer,18
+topqs,47568,protein bar,22
+topqs,71241,skipping rope,14
+topqs,31173,shal,14
+topqs,97307,fitness bar,11
+topqs,93947,yoga mat,19
+topqs,59246,kettlebell,12
+topqs,2009,dumbell,25
+topqs,67445,treadmill,11
+topqs,25355,hand grip,24
+topqs,12830,mass gainer,15
+topqs,25868,dumbell,12
+topqs,64689,treadmill,23
+topqs,84898,kettlebell,17
+topqs,74862,mass gainer,17
+topqs,94187,protein bar,21
+gfzho,75798,calvin klein goggles,19
+gfzho,94823,patrol goggles ,19
+gfzho,54920,diesel goggles ,23
+gfzho,93037,tommy hilfiger goggles,25
+gfzho,62154,harley davidson goggles,14
+gfzho,87250,rayban sunglasses,16
+gfzho,48076,polaroid sunglasses,14
+gfzho,75182,oakley sunglasses,11
+gfzho,75916,newport sunglasses,13
+gfzho,80913,tommy hilfiger goggles,25
+gfzho,42514,carrera sunglasses,24
+gfzho,72890,polaroid sunglasses,18
+gfzho,73002,calvin klein goggles,19
+gfzho,32609,farenheit sunglasses,23
+gfzho,50802,fcuk glasses,24
+gfzho,68747,superdru sunglasses,14
+gfzho,74629,marc jacobs sunglasses,16
+gfzho,2894,rayban sunglasses,21
+gfzho,27610,chemistry sunglasses,18
+gfzho,66239,idee glasses,10
+gfzho,47746,rayban sunglasses,22
+gfzho,94600,fastrack glasses,22
+gfzho,51650,superdru sunglasses,11
+gfzho,95429,peter england sunglasses,10
+gfzho,417,diesel goggles ,17
+gfzho,69665,farenheit sunglasses,15
+gfzho,344,calvin klein goggles,18
+gfzho,6305,polaroid sunglasses,24
+gfzho,44772,idee glasses,15
+gfzho,3976,police sunglasses,18
+gfzho,37079,calvin klein goggles,25
+gfzho,37599,newport sunglasses,13
+gfzho,30664,diesel goggles ,24
+gfzho,6589,farenheit sunglasses,17
+gfzho,248,polaroid sunglasses,25
+gfzho,66120,rayban sunglasses,13
+gfzho,9741,lacoste sunglasses,13
+gfzho,60415,marc jacobs sunglasses,11
+gfzho,63291,peter england sunglasses,20
+gfzho,56093,petrol glasses,10
+gfzho,91665,calvin klein goggles,14
+gfzho,92485,carrera sunglasses,25
+gfzho,86957,idee glasses,20
+gfzho,13705,oakley sunglasses,18
+gfzho,87459,rayban sunglasses,18
+gfzho,16847,newport sunglasses,14
+gfzho,25877,tommy hilfiger goggles,12
+gfzho,35090,fcuk glasses,17
+gfzho,1178,diesel goggles ,12
+gfzho,21095,calvin klein goggles,19
+qnowy,10227,iron,24
+qnowy,61706,fan,18
+qnowy,92650,air cooler,11
+qnowy,71238,inverter,25
+qnowy,50153,sewing machine ,15
+qnowy,96779,room heater ,12
+qnowy,78249,air cooler,23
+qnowy,14107,dimmers,20
+qnowy,35459,immersion rods,10
+qnowy,32617,sewing machine ,20
+qnowy,87766,inverter,22
+qnowy,54564,voltage stabilizer,14
+qnowy,7210,dimmers,15
+qnowy,89024,room heater ,15
+qnowy,96085,water purifier,16
+qnowy,521,air cooler,10
+qnowy,10529,fan,18
+qnowy,76778,iron,10
+qnowy,77209,dryer,25
+qnowy,64165,room heater ,18
+qnowy,65341,vacuum cleaner,25
+qnowy,62991,dryer,22
+qnowy,69496,air cooler,25
+qnowy,33910,fan ,24
+qnowy,56746,iron,16
+qnowy,65466,voltage stabilizer,12
+qnowy,14284,inverter,15
+qnowy,30603,vacuum cleaner,24
+qnowy,58426,water purifier,15
+qnowy,44396,room heater ,11
+qnowy,77931,air cooler,22
+qnowy,24570,dimmers,20
+qnowy,67679,dryer,11
+qnowy,15299,water purifier,24
+qnowy,31152,landline phone,23
+qnowy,98083,landline phone,18
+qnowy,31693,inverter,12
+qnowy,35219,voltage stabilizer,12
+qnowy,85976,air purifier,20
+qnowy,36697,air purifier,24
+qnowy,4200,dimmers,16
+qnowy,57714,vacuum cleaner,23
+qnowy,42078,sewing machine ,13
+qnowy,72963,inverter,17
+qnowy,78935,water purifier,12
+qnowy,52218,immersion rods,23
+qnowy,47610,room heater ,16
+qnowy,65106,sewing machine ,10
+qnowy,91093,vacuum cleaner,11
+qnowy,52963,inverter,25
+ckavi,84991,showpiece,19
+ckavi,97460,wall décor,14
+ckavi,30360,clocks,13
+ckavi,26911,photo frames,22
+ckavi,1399,flower vase,14
+ckavi,5323,photo frames,21
+ckavi,1986,table décor ,13
+ckavi,67697,handicraft,15
+ckavi,57924,photo frames,17
+ckavi,49633,festive decoe,19
+ckavi,99665,showpiece,17
+ckavi,15717,wall décor,17
+ckavi,56704,decorative lighting,18
+ckavi,43376,flower vase,21
+ckavi,14876,plants,13
+ckavi,6954,candles,19
+ckavi,62901,fragnances,11
+ckavi,1048,festive decoe,25
+ckavi,72417,table décor ,13
+ckavi,78045,candles,16
+ckavi,30459,fragnances,19
+ckavi,65782,showpiece,25
+ckavi,12723,wall décor,19
+ckavi,71802,decorative lighting,18
+ckavi,67583,table décor ,18
+ckavi,1152,candles,17
+ckavi,9818,photo frames,21
+ckavi,38077,flower vase,19
+ckavi,48586,plants,14
+ckavi,7789,festive decoe,19
+ckavi,56903,wall décor,14
+ckavi,43634,showpiece,14
+ckavi,4412,photo frames,11
+ckavi,55301,festive decoe,20
+ckavi,48184,table décor ,19
+ckavi,67555,candles,19
+ckavi,83498,fragnances,22
+ckavi,70420,flower vase,13
+ckavi,13863,plants,21
+ckavi,79804,garden ,22
+ckavi,60871,decorative lighting,24
+ckavi,28007,candles,13
+ckavi,35214,festive decoe,10
+ckavi,48644,table décor ,24
+ckavi,80918,decorative lighting,20
+ckavi,18842,wall décor,21
+ckavi,24804,clocks,25
+ckavi,38109,clocks,18
+ckavi,72059,festive decoe,21
+ckavi,3321,table décor ,18
+ioolh,15464,rucksack,14
+ioolh,31219,camping tent,24
+ioolh,42372,hiking glove,22
+ioolh,81726,hiking harness,13
+ioolh,58038,camping rope,14
+ioolh,41019,water bottle,20
+ioolh,66944,rucksack,10
+ioolh,95194,camping tent,18
+ioolh,4191,hiking glove,21
+ioolh,73088,hiking harness,17
+ioolh,32740,water bottle,14
+ioolh,93666,camping rope,18
+ioolh,87930,water bottle,22
+ioolh,68937,camping tent,20
+ioolh,80823,rucksack,18
+ioolh,49589,hiking glove,18
+ioolh,1967,hiking harness,11
+ioolh,18933,water bottle,19
+ioolh,96334,rucksack,14
+ioolh,66994,camping tent,14
+ioolh,40543,hiking harness,18
+ioolh,77398,hiking glove,11
+ioolh,29714,camping tent,11
+ioolh,57383,camping rope,10
+ioolh,70135,water bottle,18
+ioolh,50093,rucksack,20
+ioolh,93573,camping tent,22
+ioolh,61635,hiking glove,25
+ioolh,21880,hiking harness,15
+ioolh,29192,camping rope,12
+ioolh,23562,water bottle,11
+ioolh,3785,rucksack,16
+ioolh,21956,camping tent,19
+ioolh,94273,hiking harness,12
+ioolh,68796,hiking glove,19
+ioolh,28938,camping tent,16
+ioolh,15058,rucksack,17
+ioolh,38539,water bottle,18
+ioolh,24442,camping rope,16
+ioolh,92176,rucksack,21
+ioolh,94446,camping tent,22
+ioolh,2589,hiking glove,13
+ioolh,21422,hiking harness,12
+ioolh,48883,hiking glove,24
+ioolh,23514,camping tent,20
+ioolh,41474,rucksack,18
+ioolh,31417,camping rope,24
+ioolh,92437,water bottle,14
+ioolh,35808,camping tent,15
+ioolh,29340,rucksack,14
+aimpc,8041,baby toy,23
+aimpc,86277,stroller,14
+aimpc,76603,baby toy,22
+aimpc,52790,baby grooming ,18
+aimpc,25147,diaper,15
+aimpc,5466,baby bath ,11
+aimpc,81854,baby skin,25
+aimpc,7071,baby grooming ,24
+aimpc,36973,infant wear,13
+aimpc,33929,diaper,14
+aimpc,14484,rideon,12
+aimpc,80119,bath toy,17
+aimpc,39852,baby rattles,15
+aimpc,4872,musical toy,17
+aimpc,25849,crib toy,19
+aimpc,99389,rideone,21
+aimpc,21869,bath toy,22
+aimpc,86994,baby toy,12
+aimpc,50472,bath toy,22
+aimpc,73029,crib toy,17
+aimpc,74854,stroller,24
+aimpc,55664,baby toy,18
+aimpc,88214,baby grooming ,16
+aimpc,21622,baby skin,20
+aimpc,99268,diaper,16
+aimpc,68570,musical toy,20
+aimpc,96213,crib toy,23
+aimpc,94251,baby blanket,13
+aimpc,58780,baby mat,14
+aimpc,61300,baby net,11
+aimpc,64472,baby bed,16
+aimpc,9875,baby sleeping bag,25
+aimpc,42672,baby blanket,12
+aimpc,87536,baby mat,18
+aimpc,77438,baby bed,11
+aimpc,66312,baby net,14
+aimpc,78124,baby net,25
+aimpc,15836,baby mat,12
+aimpc,41841,stroller,22
+aimpc,38245,rideone,18
+aimpc,15616,bath toy,14
+aimpc,27570,crib tou,25
+aimpc,62670,stroller,23
+aimpc,21863,baby toy,15
+aimpc,26308,diaper,13
+aimpc,95518,crib toy ,25
+aimpc,67744,musical toy,10
+aimpc,13163,baby grooming ,13
+aimpc,68327,baby skin,12
+aimpc,67694,diaper,19
+xreiu,27663,canon dslr,22
+xreiu,33636,nikon dslr,14
+xreiu,27669,go pro,21
+xreiu,48434,camera tripod,12
+xreiu,3776,nikon lense,17
+xreiu,5643,go pro,22
+xreiu,85235,canon lense,23
+xreiu,75078,fujifilm instax,11
+xreiu,10930,panasonic camera,21
+xreiu,10249,sony camera,15
+xreiu,52991,pentax camera,23
+xreiu,38376,panasonic camera,25
+xreiu,15121,sony camera,23
+xreiu,88154,canon dslr,14
+xreiu,60803,sony camera,24
+xreiu,94727,pentax camera,13
+xreiu,25484,panasonic camera,22
+xreiu,72100,nikon tripos,22
+xreiu,69753,canon tripod,13
+xreiu,50845,canon lense,13
+xreiu,35679,nikon lense,12
+xreiu,14327,canon dslr,11
+xreiu,58512,panasonic camera,23
+xreiu,67370,sony camera,20
+xreiu,97078,canon lense,13
+xreiu,1913,canon dslr,21
+xreiu,42014,nikon lense,23
+xreiu,6666,sony camera,10
+xreiu,89630,pentax camera,21
+xreiu,84501,fujifilm instax,21
+xreiu,19955,kodak camera ,15
+xreiu,25077,kodak camera ,21
+xreiu,68926,nikon lense,21
+xreiu,46385,sony camera,10
+xreiu,3266,canon lense,11
+xreiu,58142,canon dslr,19
+xreiu,70766,kodak camera ,11
+xreiu,74524,fujifilm instax,17
+xreiu,83203,sony camera,21
+xreiu,20086,canon dslr,11
+xreiu,99862,canon dslr,11
+xreiu,35130,kodak camera ,10
+xreiu,84395,sony camera,12
+xreiu,59283,nikon lense,14
+xreiu,32444,canon lense,22
+xreiu,3229,sony camera,15
+xreiu,90226,fujifilm instax,18
+xreiu,71737,sony camera,23
+xreiu,64852,fujifilm instax,10
+xreiu,788,nikon lense,18
+rrbgv,1621,helter neck,18
+rrbgv,74176,peter pan neck,17
+rrbgv,66021,mock neck,10
+rrbgv,38748,henley,15
+rrbgv,19690,v neck,13
+rrbgv,18876,polo neck,12
+rrbgv,81451,round neck,25
+rrbgv,95911,polo neck ,18
+rrbgv,29489,turtle neck,16
+rrbgv,27527,flap collar neck,23
+rrbgv,9177,turtle neck,13
+rrbgv,38750,mock neck,14
+rrbgv,32821,halter neck,25
+rrbgv,94387,mock neck,24
+rrbgv,12758,turtle neck,18
+rrbgv,64839,mandarin collar,20
+rrbgv,772,henley,24
+rrbgv,65388,polo neck,14
+rrbgv,62283,round neck,11
+rrbgv,67995,v neck,23
+rrbgv,18802,flap collar neck,12
+rrbgv,61570,mock neck,23
+rrbgv,59637,scoop neck,14
+rrbgv,30811,halter neck,18
+rrbgv,27176,peter pan neck,14
+rrbgv,74756,round neck ,15
+rrbgv,17670,polo neck ,23
+rrbgv,96745,v neck,22
+rrbgv,85851,dell laptop,22
+rrbgv,48170,henley,11
+rrbgv,34260,fashion neck,24
+rrbgv,20488,hooded,12
+rrbgv,25595,mandarin collar,22
+rrbgv,9479,flap collar neck,16
+rrbgv,50636,v neck,12
+rrbgv,45818,round neck,19
+rrbgv,99360,polo neck ,25
+rrbgv,14775,hooded,19
+rrbgv,65181,flap collar neck,23
+rrbgv,87588,mandarin collar,11
+rrbgv,94709,hooded,11
+rrbgv,23145,scoop neck,14
+rrbgv,79525,peter pan neck,13
+rrbgv,2714,scoop neck,10
+rrbgv,59581,turtle neck,24
+rrbgv,11604,halter neck,15
+rrbgv,39605,mandarin collar,23
+rrbgv,51049,henley,11
+rrbgv,10642,polo neck,25
+rrbgv,88921,round neck,21
+dljib,71309,hm sweatshirt,25
+dljib,13987,zara upper,20
+dljib,62680,zara upper,14
+dljib,51237,hm sweatshirt,12
+dljib,74483,kay dee hood,13
+dljib,85495,zara upper,11
+dljib,30395,hm sweatshirt,15
+dljib,73564,adidas upper,25
+dljib,73285,ucb upper,12
+dljib,94466,us polo assn,13
+dljib,7467,wrogn upper,23
+dljib,46981,lp shirt,24
+dljib,45457,lv shirt,14
+dljib,78403,rebook sweatshirt,21
+dljib,21289,hm sweatshirt,14
+dljib,7879,us polo assn,22
+dljib,3384,adidas upper,16
+dljib,99683,puma sweatshirt,25
+dljib,7495,wrogn upper,10
+dljib,10653,nike upper,10
+dljib,24449,wrogn upper,10
+dljib,67459,rebook sweatshirt,10
+dljib,25513,us polo assn,23
+dljib,77184,ucb upper,14
+dljib,61041,levis shirt,21
+dljib,80542,puma sweatshirt,13
+dljib,45104,wrogn upper,13
+dljib,91154,ucb upper,12
+dljib,55870,wrogn upper,10
+dljib,52299,rebook sweatshirt,18
+dljib,82013,nike upper,14
+dljib,473,puma sweatshirt,22
+dljib,45444,puma sweatshirt,22
+dljib,6462,wrogn upper,22
+dljib,96203,nike upper,10
+dljib,87928,rebook sweatshirt,15
+dljib,2047,puma sweatshirt,12
+dljib,41283,wrogn upper,18
+dljib,83774,rebook sweatshirt,25
+dljib,87823,rebook sweatshirt,11
+dljib,91047,us polo assn,17
+dljib,15869,ucb upper,11
+dljib,3743,levis shirt,14
+dljib,27163,puma sweatshirt,16
+dljib,38125,wrogn upper,19
+dljib,67237,lp shirt,19
+dljib,53954,lv shirt,14
+dljib,71704,lp shirt,12
+dljib,50528,lv shirt,22
+dljib,13125,lp shirt,10
+fltpj,73030,alienware laptop,15
+fltpj,49346,alienware laptop,21
+fltpj,36912,msi laptop,11
+fltpj,95245,dell laptop,12
+fltpj,58039,dell keyboard,22
+fltpj,16409,dell mouse,15
+fltpj,52900,dell desktop,10
+fltpj,9141,dell laptop,10
+fltpj,73995,dell keyboard,20
+fltpj,1626,dell mouse,11
+fltpj,94000,hp keyboard,15
+fltpj,4773,hp keyboard,21
+fltpj,53636,hp mouse ,15
+fltpj,61012,hp laptop,21
+fltpj,24549,hp mouse,16
+fltpj,18920,hp desktop,24
+fltpj,65222,hp desktop,24
+fltpj,20874,toshiba laptop,25
+fltpj,46733,toshiba laptop,20
+fltpj,94223,toshiba keyboard,17
+fltpj,39430,toshiba keyboard,19
+fltpj,27455,toshiba keyboard,20
+fltpj,34749,toshiba mouse ,19
+fltpj,47268,toshiba desktop,12
+fltpj,52769,dell laptop,15
+fltpj,15654,dell keyboard,10
+fltpj,81393,dell keyboard,10
+fltpj,65273,dell mouse,11
+fltpj,64533,dell keyboard,10
+fltpj,59347,dell keyboard,14
+fltpj,87427,dell mouse,17
+fltpj,15495,dell keyboard,22
+fltpj,81051,dell mouse,14
+fltpj,61941,hp laptop,11
+fltpj,2786,hp keyboard,13
+fltpj,51847,hp laptop,19
+fltpj,67645,hp keyboard,24
+fltpj,74358,hp mouse,17
+fltpj,66733,hp mouse ,11
+fltpj,90505,hp laptop,18
+fltpj,18467,hp keyboard,18
+fltpj,8991,hp laptop,13
+fltpj,3192,hp keyboard,16
+fltpj,15800,hp laptop,18
+fltpj,48182,hp mouse ,25
+fltpj,23902,dell keyboard,20
+fltpj,32872,dell keyboard,24
+fltpj,31937,dell laptop,18
+fltpj,38755,dell desktop,11
+fltpj,70348,dell desktop,24
+nikvy,29529,alienware laptop,21
+nikvy,44638,msi laptop,24
+nikvy,58555,alienware laptop,24
+nikvy,14737,msi laptop,24
+nikvy,75366,alienware laptop,10
+nikvy,81520,alienware laptop,21
+nikvy,50045,msi laptop,14
+nikvy,18994,alienware laptop,15
+nikvy,57353,msi laptop,21
+nikvy,8388,alienware laptop,11
+nikvy,91922,toshiba laptop,11
+nikvy,3070,toshiba laptop,21
+nikvy,9009,toshiba laptop,17
+nikvy,85119,toshiba mouse ,20
+nikvy,48428,toshiba keyboard,11
+nikvy,63090,dell mouse,18
+nikvy,43916,dell mouse,18
+nikvy,41208,dell keyboard,10
+nikvy,54280,dell keyboard,21
+nikvy,29623,dell laptop,13
+nikvy,19354,dell keyboard,23
+nikvy,90192,dell keyboard,25
+nikvy,3764,dell keyboard,23
+nikvy,85982,dell keyboard,14
+nikvy,6189,alienware laptop,18
+nikvy,89029,msi laptop,21
+nikvy,64337,alienware laptop,15
+nikvy,93723,msi laptop,24
+nikvy,54327,alienware laptop,19
+nikvy,70315,msi laptop,18
+nikvy,63945,alienware laptop,25
+nikvy,88148,msi laptop,19
+nikvy,18594,alienware laptop,21
+nikvy,53668,msi laptop,10
+nikvy,81597,dell laptop,24
+nikvy,16049,dell keyboard,19
+nikvy,15411,dell keyboard,13
+nikvy,20095,dell keyboard,19
+nikvy,89914,dell laptop,12
+nikvy,27972,dell mouse,13
+nikvy,6175,dell desktop,18
+nikvy,64286,dell mouse,12
+nikvy,2864,dell keyboard,23
+nikvy,13648,hp mouse ,24
+nikvy,94408,hp mouse ,21
+nikvy,16940,hp laptop,16
+nikvy,69685,hp laptop,17
+nikvy,64512,hp mouse ,20
+nikvy,64623,hp mouse ,14
+nikvy,81499,hp laptop,18
+nikvy,51444,alienware laptop,19

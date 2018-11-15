@@ -1,17 +1,30 @@
 <template>
-  <v-container grid-list-lg v-if="productsAvailable">
-    <v-layout row wrap>
-      <v-flex xs6 md4 lg3 xl3 v-for="(product, index) in visibleProducts" :key="index">
-        <product-list-item :product="product" :buy="() => buyNow(product)"></product-list-item>
-      </v-flex>
-    </v-layout>
-    <v-layout row align-center>
-      <v-pagination
-        v-model="currentPage"
-        :length="paginationLength"
-      ></v-pagination>
-    </v-layout>
-    <place-order :product="selectedProduct" :open="open" :close="() => {open = false}" v-if="selectedProduct"></place-order>
+  <v-container grid-list-lg >
+    <v-slide-y-reverse-transition mode="out-in">
+      <div v-if="productsAvailable" key="products">
+        <v-layout row wrap>
+          <v-flex xs12 v-if="all">
+            <p class="headline">
+              All Products
+            </p>
+          </v-flex>
+          <v-divider></v-divider>
+          <v-flex xs6 md4 lg3 xl3 v-for="(product, index) in visibleProducts" :key="index">
+            <product-list-item :product="product" :buy="() => buyNow(product)"></product-list-item>
+          </v-flex>
+        </v-layout>
+        <v-layout row align-center>
+          <v-pagination
+            v-model="currentPage"
+            :length="paginationLength"
+          ></v-pagination>
+          <place-order :product="selectedProduct" :open="open" :close="() => {open = false}" v-if="selectedProduct"></place-order>
+        </v-layout>
+      </div>
+      <v-layout row wrap v-else key="loader">
+        <v-progress-linear :indeterminate="true"></v-progress-linear>
+      </v-layout>
+    </v-slide-y-reverse-transition>
   </v-container>
 </template>
 
@@ -21,9 +34,16 @@ import ProductListItem from './productListItem'
 import PlaceOrder from '../order/placeOrder'
 
 export default {
+  props: {
+    all: {
+      type: Boolean,
+      default: true
+    },
+    productList: Array
+  },
   data() {
     return {
-      products: [],
+      products: null,
       currentPage: 1,
       itemsPerPage: 12,
       selectedProduct: null,
@@ -31,8 +51,11 @@ export default {
       visibleProducts: []
     }
   },
-  async created() {
-    this.products = await axios.get('/api/products/all').then(res => res.data)
+  async mounted() {
+    if (this.all) {
+      this.products = await axios.get('/api/products/all').then(res => res.data)
+      return
+    }
   },
   components: {
     ProductListItem,
@@ -40,7 +63,7 @@ export default {
   },
   computed: {
     productsAvailable() {
-      return this.products.length > 0 ? true : false
+      return this.products ? true : false
     },
     paginationLength() {
       if (this.productsAvailable) {
@@ -58,6 +81,11 @@ export default {
     currentPage: function() {
       if (this.productsAvailable) {
         this.setVisbileProducts()
+      }
+    },
+    productList: function() {
+      if (!this.all) {
+        this.products = this.productList
       }
     }
   },

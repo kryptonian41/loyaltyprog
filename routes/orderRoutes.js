@@ -11,6 +11,7 @@ router.post('/place', async (req, res) => {
   const {
     body: { product, userid, amount }
   } = req
+  console.log(product, userid, amount)
   try {
     const userData = await db
       .collection('users')
@@ -21,6 +22,7 @@ router.post('/place', async (req, res) => {
       productId: product.id,
       date: Date.now()
     }
+    const orderDoc = await db.collection('orders').add(order)
     userData.amount_spent += amount
     userData.orders.push(order)
     userData.orderCount++
@@ -31,7 +33,7 @@ router.post('/place', async (req, res) => {
       .collection('users')
       .doc(userid)
       .set(userData)
-    res.send({ success: true, user: userData })
+    res.send({ success: true, user: userData, id: orderDoc.id })
   } catch {
     res.send({ success: false })
   }

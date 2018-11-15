@@ -1,8 +1,28 @@
+import GoldBadge from '@/assets/badges/gold.jpg'
+import SilverBadge from '@/assets/badges/silver.png'
+import PlatinumBadge from '@/assets/badges/platinum.jpg'
+
 export const levels = {
   SILVER: 'Silver',
   GOLD: 'Gold',
   PLATINUM: 'Platinum',
   NONE: 'none'
+}
+
+export const getBadge = level => {
+  switch (level) {
+    case levels.GOLD:
+      return GoldBadge
+      break
+    case levels.SILVER:
+      return SilverBadge
+      break
+    case levels.PLATINUM:
+      return PlatinumBadge
+      break
+    default:
+      break
+  }
 }
 
 export const getLevel = num => {
@@ -13,7 +33,7 @@ export const getLevel = num => {
   } else if (num >= 1200) {
     return levels.PLATINUM
   } else {
-    return lveles.NONE
+    return levels.NONE
   }
 }
 
@@ -34,7 +54,7 @@ export const incentives = {
   },
   [levels.PLATINUM]: {
     incentives: [
-      'Earn Survey through surveys',
+      'Earn rewards through surveys',
       'Free Delivery on all orders',
       'Exclusive Access to sales and product launches',
       'Exclusive Discounts on some products',
@@ -61,6 +81,6 @@ export const createNewUserSchema = ({ email, name, pno }) => {
     loyaltyPoints: 0,
     orderCount: 0,
     orders: [],
-    amt_spent: 0
+    amount_spent: 0
   }
 }

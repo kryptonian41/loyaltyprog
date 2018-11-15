@@ -24,15 +24,18 @@ export const store = new Vuex.Store({
   },
   // note: mutations can be synchronous only
   mutations: {
+    // authentication mutations
     userLoggedIn(state, user) {
       state.user = user
     },
     userLoggedOut(state) {
       state.user = false
     },
+    // fetching userdata
     fetchedUserData(state, data) {
       state.userData = data
     },
+    // loyalty prompts
     showLoyaltyPrompt(state) {
       if (state.userData.isLoyal) {
         return
@@ -45,14 +48,16 @@ export const store = new Vuex.Store({
       }
       state.loyaltyPromptVisible = false
     },
-    setLoyaltyString(state, level) {
-      state.loyaltyLevel = level
-    },
+    // levelup prompt
     showLevelDialog(state) {
-      levelUpPromptVisible = true
+      state.levelUpPromptVisible = true
     },
     hideLevelupDialog(state) {
-      levelUpPromptVisible = false
+      state.levelUpPromptVisible = false
+    },
+    // setting loyalty level
+    setLoyaltyString(state, points) {
+      state.loyaltyLevel = getLevel(points)
     }
   },
   // note: actions call mutations but we can write async code in actions
@@ -74,14 +79,12 @@ export const store = new Vuex.Store({
         .collection('users')
         .doc(store.state.user.uid)
         .get()
-      console.log(userDoc.data())
       if (userDoc.data()) {
         store.commit('fetchedUserData', userDoc.data())
-        store.commit(
-          'setLoyaltyString',
-          getLevel(store.state.userData.loyaltyLevel)
-        )
+        store.commit('setLoyaltyString', store.state.userData.loyaltyPoints)
       }
     }
   }
 })
+
+export default store

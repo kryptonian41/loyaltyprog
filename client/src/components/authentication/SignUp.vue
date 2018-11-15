@@ -122,7 +122,7 @@ export default {
         await db
           .collection('users')
           .doc(user.uid)
-          .set(user)
+          .set(userData)
         this.$store.dispatch('fetchUserData')
         this.loading = false
         this.$router.push('/')

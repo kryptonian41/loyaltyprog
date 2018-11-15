@@ -62,12 +62,9 @@
       <v-slide-y-reverse-transition mode="out-in">
         <router-view/>
       </v-slide-y-reverse-transition>
-      <level-prompt></level-prompt>
+      <loyalty-prompt></loyalty-prompt>
       <level-prompt></level-prompt>
     </v-content>
-    <v-footer fixed app color="blue darken-4" dark class="pa-2">
-      <span>&copy; 2017</span>
-    </v-footer>
   </v-app>
 </template>
 
@@ -109,6 +106,7 @@ export default {
         return
       }
       // marking that the user is logged in and then fetching user date from firestore
+      this.$router.push('/')
       self.userLoggedIn(user)
       self.fetchUserData()
     })

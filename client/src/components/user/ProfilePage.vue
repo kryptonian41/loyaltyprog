@@ -1,9 +1,9 @@
 <template>
   <v-container grid-list-sm>
     <v-slide-y-reverse-transition mode="out-in">
-      <div v-if="user">
+      <div v-if="user" key="profile">
         <v-layout row wrap justify-center>
-          <v-flex xs12 lg6>
+          <v-flex xs12 md8 lg6>
             <v-card>
               <v-card-title primary-title class="headline">
                 <v-avatar color="teal" class="mr-4">
@@ -24,8 +24,8 @@
             <loyalty-status></loyalty-status>
         </v-flex>
       </v-layout>
-    </div>
-      <v-layout row wrap v-else>
+      </div>
+      <v-layout row wrap v-else key="loader">
         <v-progress-linear :indeterminate="true"></v-progress-linear>
       </v-layout>
     </v-slide-y-reverse-transition>
