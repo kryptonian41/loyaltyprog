@@ -1,91 +1,117 @@
 <template>
   <v-app>
     <v-navigation-drawer
-      persistent
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      v-model="drawer"
-      enable-resize-watcher
+      stateless
+      :value="drawer"
+      clipped
       fixed
       app
     >
-      <v-list>
-        <v-list-tile
-          value="true"
-          v-for="(item, i) in items"
-          :key="i"
-        >
-          <v-list-tile-action>
-            <v-icon v-html="item.icon"></v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title"></v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
+    <v-list>
+      <v-list-tile to="/profile">
+        <v-list-tile-action>
+          <v-icon>account_circle</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-title>Profile</v-list-tile-title>
+      </v-list-tile>
+
+      <v-list-group
+        prepend-icon="assessment"
+        value="true"
+      >
+          <v-list-tile slot="activator" :to="{name: 'classes'}">
+            <v-list-tile-title>Catalogues</v-list-tile-title>
+          </v-list-tile>
+          <v-list-tile :to="{name: 'createClass'}">
+            <v-list-tile-title>Create</v-list-tile-title>
+            <v-list-tile-action>
+              <v-icon>add_circle</v-icon>
+            </v-list-tile-action>
+          </v-list-tile>
+          <v-list-tile :to="{name: 'attendence'}">
+            <v-list-tile-title>Take Attendence</v-list-tile-title>
+            <v-list-tile-action>
+              <v-icon>how_to_reg</v-icon>
+            </v-list-tile-action>
+          </v-list-tile>
+        </v-list-group>
       </v-list>
     </v-navigation-drawer>
     <v-toolbar
       app
-      :clipped-left="clipped"
+      clipped-left
+      color="blue darken-4"
+      dark
     >
-      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'"></v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="clipped = !clipped">
-        <v-icon>web</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="fixed = !fixed">
-        <v-icon>remove</v-icon>
-      </v-btn>
+      <v-toolbar-side-icon
+      @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-        <v-icon>menu</v-icon>
+      <v-btn flat icon color="white" to="/">
+        <v-icon>home</v-icon>
       </v-btn>
+      <v-btn color="success" v-if="user" @click="logout(logoutRedirect)">Logout</v-btn>
+      <v-btn color="success" v-else to="login">Login</v-btn>
     </v-toolbar>
     <v-content>
-      <router-view/>
+      <v-slide-y-reverse-transition mode="out-in">
+        <router-view/>
+      </v-slide-y-reverse-transition>
     </v-content>
-    <v-navigation-drawer
-      temporary
-      :right="right"
-      v-model="rightDrawer"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-tile @click="right = !right">
-          <v-list-tile-action>
-            <v-icon>compare_arrows</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
-    <v-footer :fixed="fixed" app>
+    <v-footer fixed app color="blue darken-4" dark class="pa-2">
       <span>&copy; 2017</span>
     </v-footer>
   </v-app>
 </template>
 
 <script>
+import { fbConfig } from '@/config/dev.js'
+import firebase from 'firebase'
+import { mapState, mapMutations, mapActions } from 'vuex'
+
 export default {
-  data () {
+  name: 'App',
+  data() {
     return {
-      clipped: false,
-      drawer: true,
-      fixed: false,
-      items: [{
-        icon: 'bubble_chart',
-        title: 'Inspire'
-      }],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      drawer: false,
+      items: [
+        {
+          icon: 'account_circle',
+          title: 'Profile'
+        }
+      ],
+      title: 'Loyals'
     }
   },
-  name: 'App'
+  computed: {
+    ...mapState(['user'])
+  },
+  created() {
+    var store = this.$store
+    const self = this
+    //Initializing the firebase app
+    firebase.initializeApp(fbConfig)
+
+    // gotcha: Mandatory to prevent the firestore errors in the console
+    const db = firebase.firestore()
+    db.settings({ timestampsInSnapshots: true })
+
+    firebase.auth().onAuthStateChanged(user => {
+      if (!user) {
+        self.userLoggedOut()
+        return
+      }
+      // marking that the user is logged in and then fetching user date from firestore
+      self.userLoggedIn(user)
+      self.fetchUserData()
+    })
+  },
+  methods: {
+    ...mapMutations(['userLoggedIn', 'userLoggedOut']),
+    ...mapActions(['logout', 'fetchUserData']),
+    logoutRedirect() {
+      this.$router.push('/login')
+    }
+  }
 }
 </script>
