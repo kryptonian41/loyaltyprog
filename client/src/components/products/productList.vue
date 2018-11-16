@@ -8,7 +8,6 @@
               All Products
             </p>
           </v-flex>
-          <v-divider></v-divider>
           <v-flex xs6 md4 lg3 xl3 v-for="(product, index) in visibleProducts" :key="index">
             <product-list-item :product="product" :buy="() => buyNow(product)"></product-list-item>
           </v-flex>

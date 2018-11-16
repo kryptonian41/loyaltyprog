@@ -61,23 +61,37 @@
             color="primary"
             depressed
             @click="step++"
+            v-if="step < 3"
           >
             Next
+          </v-btn>
+          <v-btn
+            v-if="step === 3"
+            color="primary"
+            depressed
+            @click="submit"
+          >
+            Submit
           </v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
   </v-layout>
+  <suvery-sucess :open="success" :close="close" :points="points"></suvery-sucess>
 </v-container>
 </template>
 
 <script>
+import SuverySucess from '@/components/surveys/surveysuccessprompt'
+
 export default {
   data: () => ({
     step: 1,
     recommend: null,
     services: [],
-    rating: 3
+    rating: 3,
+    success: false,
+    points: 10
   }),
   computed: {
     currentTitle() {
@@ -89,6 +103,18 @@ export default {
         default:
           return 'Account created'
       }
+    }
+  },
+  components: {
+    SuverySucess
+  },
+  methods: {
+    submit() {
+      this.success = open
+    },
+    close() {
+      this.success = false
+      this.$router.push('/surveys')
     }
   }
 }

@@ -1,27 +1,33 @@
 <template>
   <v-dialog
     v-model="levelUpPromptVisible"
+    width="500"
   >
     <v-card>
-      <v-card-title class="headline">Congratulations</v-card-title>
-
+      <v-card-title class="headline grey lighten-2">Congratulations</v-card-title>
+      <v-divider></v-divider>
       <v-card-text>
         You have unlocked {{ loyaltyLevel }}
-        <v-img
-          :src="badgeSource"
-          aspect-ratio="1"
-          class="white lighten-2"
-        >
-          <v-layout
-            slot="placeholder"
-            fill-height
-            align-center
-            justify-center
-            ma-0
-          >
-            <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-          </v-layout>
-        </v-img>
+        <v-layout row wrap justify-center>
+          <v-flex xs6>
+            <v-img
+              :src="badgeSource"
+              aspect-ratio="1"
+              class="white lighten-2"
+              contain
+            >
+              <v-layout
+                slot="placeholder"
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+              </v-layout>
+            </v-img>
+          </v-flex>
+        </v-layout>
       </v-card-text>
 
       <v-card-actions>
@@ -40,27 +46,13 @@
 
 <script>
 import { mapState, mapMutations } from 'vuex'
-import GoldBadge from '@/assets/badges/gold.jpg'
-import SilverBadge from '@/assets/badges/silver.png'
-import PlatinumBadge from '@/assets/badges/platinum.jpg'
-import { levels } from '@/helpers'
+import { levels, getBadge } from '@/helpers'
+
 export default {
   computed: {
     ...mapState(['loyaltyLevel', 'levelUpPromptVisible']),
     badgeSource() {
-      switch (this.loyaltyLevel) {
-        case levels.SILVER:
-          return SilverBadge
-          break
-        case levels.GOLD:
-          return GoldBadge
-          break
-        case levels.PLATINUM:
-          return PlatinumBadge
-          break
-        default:
-          break
-      }
+      return getBadge(this.loyaltyLevel)
     }
   },
   methods: {

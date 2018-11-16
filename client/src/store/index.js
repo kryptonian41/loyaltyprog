@@ -83,6 +83,17 @@ export const store = new Vuex.Store({
         store.commit('fetchedUserData', userDoc.data())
         store.commit('setLoyaltyString', store.state.userData.loyaltyPoints)
       }
+    },
+    checkLevelUpgrade(store, data) {
+      var upgrade = false
+      if (store.state.loyaltyLevel != getLevel(data.user.loyaltyPoints)) {
+        upgrade = true
+      }
+      store.commit('fetchedUserData', data.user)
+      store.commit('setLoyaltyString', data.user.loyaltyPoints)
+      if (upgrade) {
+        store.commit('showLevelDialog')
+      }
     }
   }
 })

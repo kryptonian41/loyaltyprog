@@ -6,8 +6,9 @@
             Recommended Products
           </p>
         </v-flex>
-        <v-divider></v-divider>
-        <product-list :all="false" :productList="products"></product-list>
+        <v-flex xs12>
+          <product-list :all="false" :productList="products"></product-list>
+        </v-flex>
     </v-layout>
   </v-container>
 </template>

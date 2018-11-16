@@ -73,6 +73,15 @@
           >
             Next
           </v-btn>
+          <v-btn
+            :disabled="loading"
+            color="primary"
+            depressed
+            @click="close"
+            v-if="step === 3"
+          >
+            Cancel
+          </v-btn>
           <v-btn color="success" v-if="step == 4" @click="() => {
               close()
               step = 1
@@ -86,7 +95,7 @@
 
 <script>
 import axios from 'axios'
-
+import { getLevel } from '@/helpers'
 export default {
   props: ['open', 'product', 'amount', 'close', 'successCb'],
   data() {
@@ -111,8 +120,7 @@ export default {
         .then(res => res.data)
       this.loading = false
       if (data.success) {
-        this.$store.commit('fetchedUserData', data.user)
-        this.$store.commit('setLoyaltyString', data.user.loyaltyPoints)
+        this.$store.dispatch('checkLevelUpgrade', data)
         this.step = 4
         this.id = data.id
       }

@@ -22,7 +22,7 @@ router.get('/recommend/:name', (req, res) => {
   var process = spawn('python', [
     path.resolve(__dirname, '../', 'recommendation', 'main.py'),
     'apoorv',
-    name.toLowerCase()
+    name
   ])
 
   // Takes stdout data from script which executed

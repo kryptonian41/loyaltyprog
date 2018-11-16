@@ -5,7 +5,9 @@
     </v-card-title>
     <v-card-text v-if="!noLevel">
       Your current loyalty level
-      <v-img
+      <v-layout row wrap justify-center>
+        <v-flex xs6>
+          <v-img
           :src="badge"
           aspect-ratio="1"
           class="white lighten-2"
@@ -21,6 +23,9 @@
             <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
           </v-layout>
         </v-img>
+        </v-flex>
+
+      </v-layout>
     </v-card-text>
     <v-card-text v-else>
       Your have not achieved a loyalty level till now.

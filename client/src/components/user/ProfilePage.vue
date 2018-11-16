@@ -13,9 +13,11 @@
               </v-card-title>
               <v-divider></v-divider>
               <v-card-text>
+                <p class="title">Current Incentives</p>
+                <ul>
+                  <li v-for="(item, index) in incentive" :key="index">{{item}}</li>
+                </ul>
               </v-card-text>
-              <v-card-actions>
-              </v-card-actions>
             </v-card>
           </v-flex>
         </v-layout>
@@ -35,10 +37,13 @@
 <script>
 import { mapState } from 'vuex'
 import LoyaltyStatus from '@/components/user/userLoyaltyStatus'
-
+import { incentives } from '@/helpers'
 export default {
   computed: {
-    ...mapState(['user', 'userData'])
+    ...mapState(['user', 'userData', 'loyaltyLevel']),
+    incentive() {
+      return incentives[this.loyaltyLevel].incentives
+    }
   },
   components: {
     LoyaltyStatus
