@@ -2,11 +2,7 @@
 
 This is a assignment project for **Dell's Intership Programme 2018**.
 
-**Overview** - The web app is served by a backend server coded using Node.js and the frontend side of the app in implemented using Vue.js. The web app has been hosted on Heroku.
-
-## Demo
-
-You can view the live example [here](https://delloyalty.herokuapp.com).
+**Overview** - The web app is served by a backend server coded using Node.js and the frontend side of the app in implemented using Vue.js.
 
 ## Folder Structure
 
@@ -20,7 +16,6 @@ You can view the live example [here](https://delloyalty.herokuapp.com).
 
 1. Node.js - To set up the server
 2. NoSQL Database - Firebase
-3. Axios - To make API calls
 
 ### Frontend
 
